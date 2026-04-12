@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@tailwind utilities;
 @theme {
   --color-bg: #0f172a;
   --color-surface: #1e293b;
@@ -16,5 +16,66 @@
 @layer base {
   html {
     @apply scroll-smooth;
+  }
+  body {
+    background-color: var(--color-bg);
+    font-family: "preahvihear", sans-serif;
+    color: var(--color-text);
+  }
+  .font-serif {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+  }
+
+  .strong-glass {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+  }
+
+  .glow{
+    box-shadow: 0 0 50px color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes moving-dots {
+    0% ,
+    100%{
+      transform: translate(0, 0);
+    }
+    25%{
+      transform: translate(20px, -30px);
+    }
+    50%{
+      transform: translate(15px, 20px);
+    }
+    75%{
+      transform: translate(30px, 10px);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.9s ease-out both;
   }
 }
