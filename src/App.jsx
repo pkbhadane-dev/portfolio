@@ -15,13 +15,13 @@ function App() {
          <section>
           <Hero />
         </section>
-       {/* <section>
-          <About />
-        </section>
         <section>
           <Skills />
         </section>
-        <section>
+       {/* <section>
+          <About />
+        </section> */}
+        {/* <section>
           <Projects />
         </section>
         <section>
