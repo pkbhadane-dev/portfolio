@@ -3,30 +3,30 @@ import { About } from "./sections/about";
 import { Contact } from "./sections/contact";
 import { Hero } from "./sections/hero";
 import { Projects } from "./sections/projects";
-import { Skills } from "./sections/skills";
+// import { Skills } from "./sections/skills";
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
       <main>
-         <section>
+        <section>
           <Hero />
         </section>
         <section>
-          <Skills />
-        </section>
-       {/* <section>
           <About />
-        </section> */}
+        </section>
         {/* <section>
+          <Skills />
+        </section> */}
+         <section>
           <Projects />
         </section>
-        <section>
+        {/* <section>
           <Contact />
-        </section> */}
+        </section>  */}
       </main>
     </div>
   );

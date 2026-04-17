@@ -51,6 +51,7 @@
   }
   .max-width {
     max-width: 1152px;
+    
   }
 }
 
@@ -94,6 +95,23 @@
     }
   }
 
+  @keyframes slider {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-slider{
+    animation: slider 20s linear infinite;
+  }
+
+  .animate-slider:hover{
+    animation-play-state: paused;
+  }
+
   .animate-float{
     animation: float 5s ease-in-out both infinite;
   }
@@ -120,7 +138,10 @@
     animation-delay: 700ms;
   }
 
-  .animate-fade-in {
-    animation: fade-in 0.9s ease-out both;
+   .animate-fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
   }
 }

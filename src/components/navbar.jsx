@@ -4,14 +4,14 @@ import { Link } from "react-router";
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navLinks = [
-    { path: "/skills", name: "Skills" },
-    { path: "/about", name: "About" },
+    { path: "#skills", name: "Skills" },
+    { path: "#about", name: "About" },
     { path: "/projects", name: "Projects" },
     { path: "/contact", name: "Contact" },
   ];
   return (
     <>
-      <div className="fixed z-100 top-0 left-0 right-0 mx-1.5 bg-transparent py-4">
+      <div className="fixed z-120 top-0 left-0 right-0 mx-1.5 bg-transparent py-4">
         <nav className="max-w-6xl mx-auto flex justify-between items-center">
           <span className="text-primary font-bold hover:text-text-muted">
             LOGO
