@@ -37,7 +37,7 @@ export const Hero = () => {
         </div>
 
         {/* hero section */}
-        <div className="max-width m-auto pt-10 lg:pt-25 pb-18 relative z-20">
+        <div className="max-width m-auto pt-10 lg:pt-25 pb-18 relative z-20 overflow-hidden">
           <div className=" my-17 grid md:grid-cols-2 md:ml-10 items-center text-center space-y-10">
             <div className="space-y-10 z-20">
               <h1 className="text-3xl leading-10 sm:text-3xl md:text-4xl md:leading-12 text-text animate-fade-in animation-delay-100">

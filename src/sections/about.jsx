@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <>
-      <div className="max-width m-auto px-4 overflow-hidden " id="about">
+      <div className="max-width m-auto px-4 overflow-hidden "id="about">
        <div className=" animate-fade-in animation-delay-300 text-text  leading-6 space-y-5">
          <h2 className=" text-primary">
           ABOUT ME

@@ -26,6 +26,9 @@
   .font-serif {
     font-family: "Plus Jakarta Sans", sans-serif;
   }
+  .text-font {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 @layer components {
@@ -51,7 +54,6 @@
   }
   .max-width {
     max-width: 1152px;
-    
   }
 }
 
@@ -90,29 +92,29 @@
     100% {
       transform: translateY(0);
     }
-    50%{
+    50% {
       transform: translateY(-10px);
     }
   }
 
   @keyframes slider {
-    0%{
+    0% {
       transform: translateX(0);
     }
-    100%{
+    100% {
       transform: translateX(-50%);
     }
   }
 
-  .animate-slider{
+  .animate-slider {
     animation: slider 20s linear infinite;
   }
 
-  .animate-slider:hover{
+  .animate-slider:hover {
     animation-play-state: paused;
   }
 
-  .animate-float{
+  .animate-float {
     animation: float 5s ease-in-out both infinite;
   }
 
@@ -138,10 +140,11 @@
     animation-delay: 700ms;
   }
 
-   .animate-fade-in {
+  .animate-fade-in {
     animation-name: fade-in;
     animation-duration: 0.9s;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
   }
+
 }
