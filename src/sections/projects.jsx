@@ -1,38 +1,42 @@
+import { ArrowUpRight } from "lucide-react";
+// import {  FaGithubAlt } from "react-icons/fa";
+import projects from "../data/projects.json";
+import { FaGithub } from "react-icons/fa";
+
 export const Projects = () => {
   return (
     <>
-      <div className="max-width m-auto px-4 pt-30 pb-30 overflow-hidden">
-        <h3 className="text-primary">PROJECTS</h3>
-       <div className=" space-y-20">
-         <div className="flex relative justify-end px-15">
-          <div className=" w-96 h-auto glow rounded-md cursor-pointer hover:scale-105 transition-all duration-300">
-            <img className="w-96 rounded-md" src="portfolio.jpeg" alt="" />
-          </div>
-          <div>
-            <div className=" absolute glass inset-10 w-96 rounded-md left-80 text-text-muted space-y-4 p-2 hover:scale-110 transition-all duration-400">
-              <h4 className="text-font font-semibold">VidTube</h4>
-              <p className="text-font font-medium text-sm">
-                A video hosting platform where you can like video, subscribe
-                channel, and see your channel stats
-              </p>
-            </div>
+      <div className="max-width m-auto px-4 flex flex-col gap-5 py-20 pb-30 overflow-hidden">
+        <div>
+          <h3 className="text-primary">PROJECTS</h3>
+        </div>
+        <div>
+          <div className="grid md:grid-cols-2 gap-16 text-font p-4">
+            {projects.map((project) => (
+              <div key={project.id} className="flex flex-col rounded-md overflow-hidden">
+                <div className="group glow m-1 rounded-md relative overflow-hidden h-full">
+                  <img className="w-full group-hover:scale-110 transition-transform duration-500" src={project.thumbnail} alt="" />
+                  <div className="absolute inset-0 group-hover:bg-linear-to-t from-surface via-surface/80 to-transparent opacity-50"/>
+                  <div className=" absolute inset-0 flex gap-5 justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <a className=" group-hover:bg-surface/90 rounded-md" href="">
+                      <ArrowUpRight size={28}/>
+                    </a>
+                    <a className="group-hover:bg-surface/90 p-1 rounded-md" href="">
+                      <FaGithub size={22}/>
+                    </a>
+                  </div>
+                </div>
+                <div className="glass p-2 px-3 space-y-2 border-none md:h-full ">
+                  <h4 className="text-primary font-semibold">{project.title}</h4>
+                  <p>{project.description}</p>
+                  <div className="flex flex-wrap gap-3 pt-2">
+                    {project.techStack.map((tech)=><span className="glass py-1 px-2 rounded-md text-sm">{tech}</span>)}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="flex relative px-15">
-          <div className=" w-96 h-auto glow rounded-md hover:scale-105 cursor-pointer transition-all duration-300">
-            <img className="w-96 rounded-md" src="portfolio.jpeg" alt="" />
-          </div>
-          <div>
-            <div className=" absolute glass inset-10 w-96 rounded-md left-104 text-text-muted space-y-4 p-2 hover:scale-110 transition-all duration-400">
-              <h4 className="text-font font-semibold">VidTube</h4>
-              <p className="text-font font-medium text-sm">
-                A video hosting platform where you can like video, subscribe
-                channel, and see your channel stats
-              </p>
-            </div>
-          </div>
-        </div>
-       </div>
       </div>
     </>
   );
