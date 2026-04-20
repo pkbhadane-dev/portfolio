@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 export const Projects = () => {
   return (
     <>
-      <div className="max-width m-auto px-4 flex flex-col gap-5 py-20 pb-30 overflow-hidden">
+      <div className="max-width m-auto px-4 flex flex-col gap-5 pt-16 overflow-hidden">
         <div>
           <h3 className="text-primary">PROJECTS</h3>
         </div>

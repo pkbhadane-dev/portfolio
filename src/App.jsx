@@ -3,8 +3,8 @@ import { About } from "./sections/about";
 import { Contact } from "./sections/contact";
 import { Hero } from "./sections/hero";
 import { Projects } from "./sections/projects";
-// import { Skills } from "./sections/skills";
 import { motion } from "framer-motion";
+import { Skills } from "./sections/skills";
 
 function App() {
   return (
@@ -21,27 +21,31 @@ function App() {
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            // viewport={{ once: true }}
           >
             <About />
           </motion.div>
         </section>
-        {/* <section>
+        <section>
           <Skills />
-        </section> */}
+        </section>
         <section>
           <motion.div
             initial={{ opacity: 0, y: -80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            // viewport={{ once: true }}
           >
             <Projects />
           </motion.div>
         </section>
-        {/* <section>
-          <Contact />
-        </section>  */}
+        <section>
+          <motion.div
+          initial={{opacity:0, y: -80}}
+          whileInView={{opacity:1, y:0}}
+          transition={{duration:0.9}}
+          >
+            <Contact />
+          </motion.div>
+        </section>
       </main>
     </div>
   );

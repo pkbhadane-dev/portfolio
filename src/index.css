@@ -50,7 +50,7 @@
   }
   .text-glow {
     text-shadow: 0 0 50px
-      color-mix(in srgb, var(--color-primary-hover) 100%, transparent);
+      color-mix(in srgb, var(--color-primary) 90%, transparent);
   }
   .max-width {
     max-width: 1152px;
