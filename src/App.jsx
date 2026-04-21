@@ -26,12 +26,18 @@ function App() {
           </motion.div>
         </section>
         <section>
-          <Skills />
+          <motion.div
+          initial={{opacity:0, x:-40}}
+          whileInView={{opacity:1, x:0}}
+          transition={{duration:0.9}}
+          >
+            <Skills />
+          </motion.div>
         </section>
         <section>
           <motion.div
-            initial={{ opacity: 0, y: -80 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9 }}
           >
             <Projects />
@@ -41,7 +47,7 @@ function App() {
           <motion.div
           initial={{opacity:0, y: -80}}
           whileInView={{opacity:1, y:0}}
-          transition={{duration:0.9}}
+          transition={{duration:1}}
           >
             <Contact />
           </motion.div>
