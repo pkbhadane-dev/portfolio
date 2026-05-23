@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 export const Projects = () => {
   return (
     <>
-      <div className="max-width m-auto px-4 flex flex-col gap-5 pt-16 overflow-hidden">
+      <div className="max-width m-auto px-4 flex flex-col gap-5 pt-16 overflow-hidden" id="projects">
         <div>
           <h3 className="text-primary">PROJECTS</h3>
         </div>
@@ -18,10 +18,10 @@ export const Projects = () => {
                   <img className="w-full group-hover:scale-110 transition-transform duration-500" src={project.thumbnail} alt="" />
                   <div className="absolute inset-0 group-hover:bg-linear-to-t from-surface via-surface/80 to-transparent opacity-50"/>
                   <div className=" absolute inset-0 flex gap-5 justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <a className=" group-hover:bg-surface/90 rounded-md" href="">
+                    <a className=" group-hover:bg-surface/90 rounded-md" href={project.liveLink}>
                       <ArrowUpRight size={28}/>
                     </a>
-                    <a className="group-hover:bg-surface/90 p-1 rounded-md" href="">
+                    <a className="group-hover:bg-surface/90 p-1 rounded-md" href={project.githubLink}>
                       <FaGithub size={22}/>
                     </a>
                   </div>

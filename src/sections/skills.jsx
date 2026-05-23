@@ -50,7 +50,7 @@ export const Skills = () => {
 
   return (
     <>
-      <div className=" max-width m-auto pt-16 px-4 overflow-hidden">
+      <div className=" max-width m-auto pt-16 px-4 overflow-hidden" id="skills">
         <div className=" py-2 text-center pb-10">
           <h4 className="text-lg">
             <span className="text-primary text-glow">Skills</span>, I have

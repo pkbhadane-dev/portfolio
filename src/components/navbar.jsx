@@ -4,10 +4,11 @@ import { Link } from "react-router";
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navLinks = [
+    { path: "#hero", name: "Hero" },
     { path: "#skills", name: "Skills" },
     { path: "#about", name: "About" },
-    { path: "/projects", name: "Projects" },
-    { path: "/contact", name: "Contact" },
+    { path: "#projects", name: "Projects" },
+    { path: "#contact", name: "Contact" },
   ];
   return (
     <>

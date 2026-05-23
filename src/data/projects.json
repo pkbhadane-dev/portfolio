@@ -3,7 +3,7 @@
     "id": 1,
     "title": "VidTube",
     "description": "A video hosting platform inspired by YouTube. Built to handle complex data operations and video streaming features.",
-    "thumbnail": "portfolio.jpeg",
+    "thumbnail": "new vidtube.jpg",
     "techStack": [
       "React",
       "Node.js",
@@ -20,15 +20,15 @@
       "Video upload and management with Cloudinary integration",
       "Dynamic search and channel statistics dashboard"
     ],
-    "githubLink": "https://github.com/yourusername/vidtube",
-    "liveLink": "https://vidtube-live.vercel.app",
+    "githubLink": "https://github.com/pkbhadane-dev",
+    "liveLink": "https://vidtube-pk.vercel.app",
     "category": "Full Stack"
   },
   {
     "id": 2,
     "title": "Let's Talk",
     "description": "A real-time web chat application focused on low-latency communication and instant messaging.",
-    "thumbnail": "portfolio.jpeg",
+    "thumbnail": "letstalk.png",
     "techStack": [
       "React",
       "Node.js",
@@ -44,8 +44,8 @@
       "Online/Offline user status tracking",
       "Clean and responsive UI for seamless user experience"
     ],
-    "githubLink": "https://github.com/yourusername/letstalk",
-    "liveLink": "https://letstalk-chat.vercel.app",
+    "githubLink": "https://github.com/pkbhadane-dev",
+    "liveLink": "https://letstalk-pk.vercel.app",
     "category": "Real-time Web"
   }
 ]

@@ -5,7 +5,7 @@ import { LiaLinkedin } from "react-icons/lia";
 export const Contact = () => {
   return (
     <>
-      <div className="max-width m-auto overflow-hidden px-4 pb-20 pt-12 ">
+      <div className="max-width m-auto overflow-hidden px-4 pb-20 pt-12" id="contact">
         <div className="flex flex-col gap-3 items-center max-w-2xl m-auto ">
           <h4 className="text-primary text-lg">Let's Work Togather</h4>
           <p className="text-center">

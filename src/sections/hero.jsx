@@ -19,7 +19,7 @@ export const Hero = () => {
     <>
       {/* set background gradient color */}
       <div className=" absolute inset-0 bg-linear-to-b from-slate-900 via-primary/20 to-slate-900" />
-      <div className=" relative">
+      <div className=" relative" id="hero">
         {/* creating dots */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(50)].map((_, i) => (
@@ -73,7 +73,7 @@ export const Hero = () => {
               <div className=" relative w-2xs z-10">
                 <img
                   className="rounded-sm object-cover glow"
-                  src="matt murdock.jpg"
+                  src="portfolio image.jpg"
                   alt=""
                 />
                 <div className=" absolute glass py-1 px-3 -right-5 -bottom-4 rounded-full animate-float">
