@@ -40,7 +40,7 @@ export const Hero = () => {
         <div className="max-width m-auto pt-10 lg:pt-25 pb-18 relative z-20 overflow-hidden">
           <div className=" my-17 grid md:grid-cols-2 md:ml-10 items-center text-center space-y-10">
             <div className="space-y-10 z-20">
-              <h1 className="text-3xl leading-10 sm:text-3xl md:text-4xl md:leading-12 text-text animate-fade-in animation-delay-100">
+              <h1 className="text-3xl px-1 leading-10 sm:text-3xl md:text-4xl md:leading-12 text-text animate-fade-in animation-delay-100">
                 The best way to predict
                 <br /> the{" "}
                 <span className=" italic font-bold text-glow text-primary-hover">
@@ -49,22 +49,22 @@ export const Hero = () => {
                 is to create it.
               </h1>
 
-              <p className="text-lg text-text-muted animate-fade-in animation-delay-300">
+              <p className="text-lg px-2 text-text-muted animate-fade-in animation-delay-300">
                 A self-taught Mern-Stack Developer dedicated to building robust
                 and visually stunning web applications. Experienced in MERN
                 Stack, UI/UX design, and Cloud integrations. I don't just write
                 code, I build experiences.
               </p>
 
-              <div className="flex justify-center gap-10 animate-fade-in animation-delay-400">
-                <button className=" relative cursor-pointer bg-primary hover:text-black py-2 px-5 rounded-full transition-all duration-300">
+              <div className="flex px-1 justify-center gap-10 animate-fade-in animation-delay-400">
+                <a href="#contact" className=" relative cursor-pointer bg-primary hover:text-black py-2 px-5 rounded-full transition-all duration-300">
                   <div className=" absolute inset-0 rounded-full glow animate-pulse w-full h-full" />
                   Contact Me
-                </button>
-                <button className="group cursor-pointer flex items-center gap-2 border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-5 rounded-full">
+                </a>
+                <a href="Prashant-Resume.pdf" target="blanck" className="group cursor-pointer flex items-center gap-2 border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-5 rounded-full">
                   <Download className=" animate-bounce group-hover:text-primary transition-all duration-300" />{" "}
                   Resume
-                </button>
+                </a>
               </div>
             </div>
 
