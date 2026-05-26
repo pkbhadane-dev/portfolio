@@ -11,7 +11,7 @@ export const Projects = () => {
         id="projects"
       >
         <div>
-          <h3 className="text-primary px-2">PROJECTS</h3>
+          <h3 className="text-primary px-4">PROJECTS</h3>
         </div>
         <div>
           <div className="grid md:grid-cols-2 gap-16 text-font p-4">
@@ -31,26 +31,36 @@ export const Projects = () => {
                     <a
                       className=" group-hover:bg-surface/90 rounded-md"
                       href={project.liveLink}
+                      target="_blank"
                     >
                       <ArrowUpRight size={28} />
                     </a>
                     <a
                       className="group-hover:bg-surface/90 p-1 rounded-md"
                       href={project.githubLink}
+                      target="_blank"
                     >
                       <FaGithub size={22} />
                     </a>
                   </div>
                 </div>
                 <div className="flex xl:hidden justify-center gap-10 py-1 pb-2 font-serif">
-                  <button className=" flex glass pr-2 py-1 text-sm rounded-md justify-center items-center">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    className=" flex glass pr-2 py-1 text-sm rounded-md justify-center items-center"
+                  >
                     <ArrowUpRight size={25} />
                     <span>Live</span>
-                  </button>
-                  <button className="flex glass px-2 py-1 text-sm rounded-md gap-1 items-center justify-center">
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    className="flex glass px-2 py-1 text-sm rounded-md gap-1 items-center justify-center"
+                  >
                     <FaGithub size={20} />
                     <span>Github</span>
-                  </button>
+                  </a>
                 </div>
                 <div className="glass p-2 px-3 space-y-2 border-none md:h-full ">
                   <h4 className="text-primary font-semibold">
