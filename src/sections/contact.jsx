@@ -58,7 +58,7 @@ export const Contact = () => {
       >
         <div className="flex flex-col gap-3 items-center max-w-2xl m-auto ">
           <h4 className="text-primary text-lg">Let's Work Togather</h4>
-          <p className="text-center px-1">
+          <p className="text-center px-2">
             I'm currently looking for new opportunities. My inbox is always
             open, whether for a potential job, project collaboration, or just to
             say hi!
