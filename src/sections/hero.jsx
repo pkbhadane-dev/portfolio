@@ -68,6 +68,7 @@ export const Hero = () => {
                   href="/Prashant-Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  download="Prashant_Bhadane_Resume.pdf"
                   className="group cursor-pointer flex items-center gap-2 border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-5 rounded-full"
                 >
                   <Download className=" animate-bounce group-hover:text-primary transition-all duration-300" />{" "}
