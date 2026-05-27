@@ -57,11 +57,19 @@ export const Hero = () => {
               </p>
 
               <div className="flex px-1 justify-center gap-10 animate-fade-in animation-delay-400">
-                <a href="#contact" className=" relative cursor-pointer bg-primary hover:text-black py-2 px-5 rounded-full transition-all duration-300">
+                <a
+                  href="#contact"
+                  className=" relative cursor-pointer bg-primary hover:text-black py-2 px-5 rounded-full transition-all duration-300"
+                >
                   <div className=" absolute inset-0 rounded-full glow animate-pulse w-full h-full" />
                   Contact Me
                 </a>
-                <a href="Prashant-Resume.pdf" target="_blank" className="group cursor-pointer flex items-center gap-2 border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-5 rounded-full">
+                <a
+                  href="/Prashant-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group cursor-pointer flex items-center gap-2 border-2 hover:border-primary hover:text-primary transition-all duration-300 py-2 px-5 rounded-full"
+                >
                   <Download className=" animate-bounce group-hover:text-primary transition-all duration-300" />{" "}
                   Resume
                 </a>
