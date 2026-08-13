@@ -20,7 +20,7 @@
       "Video upload and management with Cloudinary integration",
       "Dynamic search and channel statistics dashboard"
     ],
-    "githubLink": "https://github.com/pkbhadane-dev",
+    "githubLink": "https://github.com/pkbhadane-dev?tab=repositories",
     "liveLink": "https://vidtube-pk.vercel.app",
     "category": "Full Stack"
   },
@@ -44,8 +44,30 @@
       "Online/Offline user status tracking",
       "Clean and responsive UI for seamless user experience"
     ],
-    "githubLink": "https://github.com/pkbhadane-dev",
+    "githubLink": "https://github.com/pkbhadane-dev?tab=repositories",
     "liveLink": "https://letstalk-pk.vercel.app",
     "category": "Real-time Web"
+  },
+  {
+    "id": 3,
+    "title": "Gst Invoice & Calculator",
+    "description": "Invoice / GST calculator web app with user auth, client management, and invoice creation/viewing.",
+    "thumbnail": "Gst-Invoice-Calculator.png",
+    "techStack": [
+      "React",
+      "Node.js",
+      "React-Router",
+      "Context API",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Automatically computes item subtotals, multi-slab GST amounts (0% to 28%), and grand totals instantly as line items are updated.",
+      "Provides instant visibility into key performance metrics like total clients, generated invoices, and overall revenue."
+    ],
+    "githubLink": "https://github.com/pkbhadane-dev?tab=repositories",
+    "liveLink": "https://gst-invoice-calculator-sigma.vercel.app",
+    "category": "Full Stack"
   }
 ]
