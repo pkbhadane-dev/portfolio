@@ -14,11 +14,11 @@ export const Projects = () => {
           <h3 className="text-primary px-4">PROJECTS</h3>
         </div>
         <div>
-          <div className="grid md:grid-cols-2 gap-16 text-font p-4">
+          <div className="grid md:flex md:flex-wrap justify-center gap-16 text-font p-4">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="flex flex-col rounded-md overflow-hidden"
+                className="flex flex-col md:w-100 rounded-md overflow-hidden"
               >
                 <div className="group glow m-1 rounded-md relative overflow-hidden h-full">
                   <img
