@@ -65,7 +65,7 @@ export const Hero = () => {
                   Contact Me
                 </a>
                 <a
-                  href="/Prashant-Resume.pdf"
+                  href="/Prashant Bhadane Resume(updated).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   download="Prashant_Bhadane_Resume.pdf"
